@@ -10,6 +10,9 @@ Click_on = { # < Dict with all XPATHs
 
 Browser = webdriver.Firefox() # < Will open the Firefox
 Browser.get("https://orteil.dashnet.org/cookieclicker/") # < Will access the game
+                            # v Height
+Browser.set_window_size(500, 600)
+                        # ^ Width
 
 sleep(3)            # v Path reader type [XPATH]
 Browser.find_element(By.XPATH, "/html/body/div[2]/div[2]/div[12]/div/div[1]/div[1]/div[2]").click() # < Will click on the especific html
